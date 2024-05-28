@@ -13,6 +13,7 @@
         *{
             font-size: 1.2rem;
         }
+
          body, html {
             height: 100%;
             margin: 0;
@@ -54,25 +55,39 @@
             padding: 30px;
             color: #fff; 
         }
+
         h1 {
             text-align: center;
             margin-bottom: 30px;
             color: #ffc107;
         }
+
         label {
             color: #ffc107;
         }
+
         input{
             border-radius: 5px;
             height: 1.5rem;
         }
+
         .btn-primary {
             background-color: #ffc107;
             border-color: #ffc107;
+            border-radius: 10px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+
         .btn-primary:hover {
             background-color: #e0a800;
             border-color: #d39e00;
+        }
+
+        .btn-primary img {
+            margin-left: 5px;
+            filter: invert(1); 
         }
         textarea, input[type="text"], input[type="number"], input[type="email"], select {
             background-color: transparent;
@@ -130,21 +145,25 @@
             display: block;
         }
         
-
+        .form-label img {
+            vertical-align:bottom;
+            margin-left: 3px; 
+        }
+        
         
     </style>
 </head>
 <body>
     <div class="bg-video">
         <video autoplay muted loop>
-            <source src="bg_anim.mp4" type="video/mp4">
+            <source src="img/bg_anim.mp4" type="video/mp4">
         </video>
     </div>
     <div class="container">
         <h1>Formular de Înscriere</h1>
         <form id="fitnessForm">
             <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
+                <label for="email" class="form-label">Email <img src="img/mail.svg" alt=""></label>
                 <input type="email" class="form-control custom-input" id="email" placeholder="email" required >
             </div>
             <div class="mb-3">
@@ -248,7 +267,7 @@
                 <label class="form-label">Care sunt abilitățile pe care îți propui să le îmbunătățești sau să le dobândești?</label>
                 <textarea class="form-control custom-textarea" id="abilitati" rows="3" ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Trimite</button>
+            <button type="submit" class="btn btn-primary">Trimite <img src="img/send.svg" alt="Send Icon"></button>
         </form>
         
     </div>
